@@ -44,7 +44,35 @@
   - [Conda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) is recommended for managing dependencies.  
   - Python version 3.8 or higher is required. 
 
-### Installation Steps
+## Installation Steps
+
+### WSL Ubuntu preparation
+
+1. Install CUDA Tools 11.8
+
+```sh
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+sudo sh cuda_11.8.0_520.61.05_linux.run
+```
+
+
+2. Install conda
+
+```sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+conda --version
+```
+you can use conda
+```
+conda activate xxxx
+conda deactivate
+```
+
+
+### Steps
+
 1. Clone the repo:
     ```sh
     git clone --recurse-submodules https://github.com/microsoft/TRELLIS.git
